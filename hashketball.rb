@@ -113,7 +113,7 @@ def game_hash
       }]
     }
   }
-  game_hash
+  return game_hash
 end
 
 =begin
