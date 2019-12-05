@@ -149,7 +149,6 @@ nil
 end 
 
 def team_names
-  game_hash.each do|teams|
   return game_hash[:teams]
 
 
