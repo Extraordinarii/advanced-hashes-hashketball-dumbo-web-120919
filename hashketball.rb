@@ -165,7 +165,21 @@ def player_numbers(team_name)
   nil 
 end 
 
-
+def player_stats(player_name)
+  game_hash.each do |teams, data|
+    data.each do |team, value|
+      if team == :players 
+        value.each do |player|
+          if player_name == player[:player_name]
+            player.delete(:player_name)
+            return player 
+          end 
+        end 
+      end 
+    end 
+  end 
+  nil 
+end 
 
 
 
