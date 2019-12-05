@@ -125,3 +125,5 @@ def num_points_scored(player_name) #create a function that accepts an array of h
   end
 end
 end
+nil 
+end
