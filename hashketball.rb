@@ -122,5 +122,6 @@ def num_points_scored(player_name) #create a function that accepts an array of h
   data[:players].each do|player|
   if player[:player] == player_name 
     return player[:points]
-    
+  end
+end
 end
