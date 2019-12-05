@@ -128,6 +128,6 @@ end
 nil 
 end
 
-def shoe_size(shoe)
+def shoe_size(player_name)
   game_hash.each do|teams, data|
   data[:shoe].each do|shoe|
