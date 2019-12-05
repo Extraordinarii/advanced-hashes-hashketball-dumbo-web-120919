@@ -218,7 +218,11 @@ def most_points_scored
 end
 
 
+#create a method that returns the most points awarded to a player 
 
+#go through teams, then the team data 
+#then compare if the team data matches each player 
+#then create a loop that will compare each value of the player and the player with the most points will be the player with the highest points 
 
 
 
