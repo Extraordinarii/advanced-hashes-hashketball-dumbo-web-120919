@@ -116,8 +116,10 @@ def game_hash
   return game_hash
 end
 
-def num_points_scored(player_name)
-  game_hash.do each|teams, data|
+def num_points_scored(player_name) #create a function that accepts an array of hashes;
+  game_hash.do each|teams, data| #must iterate through each team acquiring data from each subset
+  #now we must iterate once more deeper to acquire player information & points scored 
+  games_hash.do each|[:players],
   
   
 end
