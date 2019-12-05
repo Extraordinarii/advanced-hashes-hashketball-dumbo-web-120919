@@ -229,6 +229,7 @@ end
 # it should assign home & away 
 #then compare who has the highest points home[:points] > away[:points]
 
+#create a method that will return a player with the longest name 
 
 
 
