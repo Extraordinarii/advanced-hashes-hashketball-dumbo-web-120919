@@ -112,7 +112,6 @@ def game_hash
         :slam_dunks => 12,
       }
     }]
-  }
 end
 
 =begin
