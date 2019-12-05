@@ -157,7 +157,13 @@ end
 def player_numbers(team_name)
   game_hash.each do |teams, data|
     if data[:player] == team_name 
-      return data[:players].reduce([])
+      return data[:players].reduce([]) do |arr, player|
+        arr << player[:number]
+      end
+    end
+  end 
+  nil 
+end 
 
 
 
