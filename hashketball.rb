@@ -149,7 +149,10 @@ nil
 end 
 
 def team_names
-  return game_hash[:teams]
+  return game_hash.reduce([]) do |names, (teams, data)|
+    names << data[:team_name]
+  end 
+end 
 
 
 
