@@ -120,7 +120,7 @@ def num_points_scored(player_name) #create a function that accepts an array of h
   game_hash.each do|teams, data| #must iterate through each team acquiring data from each subset
   #now we must iterate once more deeper to acquire player information that's being searched for& points scored 
   data[:players].each do|player|
-  if player[:player_] == player_name 
+  if player[:player_name] == player_name 
     return player[:points]
   end
 end
