@@ -181,6 +181,41 @@ def player_stats(player_name)
   nil 
 end 
 
+def biggest_shoe
+  biggest_shoe = {:shoe => 0}
+  game_hash.each do |teams, data|
+    data.each do |team_data, value|
+      if team_data == :players
+        value.each do |player|
+          if player[:shoe] > biggest_shoe[:shoe]
+            biggest_shoe = player
+          end
+        end
+      end
+    end
+  end
+  return biggest_shoe
+end
+
+def big_shoe_rebounds
+  return biggest_shoe[:rebounds]
+end
+
+def most_points_scored
+  most_points = {:points => 0}
+  game_hash.each do |teams, data|
+    data.each do |team_data, value|
+      if team_data == :players
+        value.each do |player|
+          if player[:points] > most_points[:points]
+            most_points = player
+          end
+        end
+      end
+    end
+  end
+  return most_points[:player_name]
+end
 
 
 
