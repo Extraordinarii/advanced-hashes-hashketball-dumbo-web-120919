@@ -225,4 +225,11 @@ end
 #then create a loop that will compare each value of the player and the player with the most points will be the player with the highest points 
 
 
+#create a method called winning_team
+# it should assign home & away 
+#then compare who has the highest points home[:points] > away[:points]
+
+
+
+
 
