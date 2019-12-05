@@ -140,7 +140,8 @@ nil
 end 
 
 def team_colors(team_name)
-  game_hash
+  game_hash.each do|teams, data|
+  data[:]
 
 
 
