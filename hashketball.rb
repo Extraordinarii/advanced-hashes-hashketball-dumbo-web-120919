@@ -121,5 +121,6 @@ def num_points_scored(player_name) #create a function that accepts an array of h
   #now we must iterate once more deeper to acquire player information that's being searched for& points scored 
   data[:players].each do|player|
   if player[:player] == player_name 
+    return player[:points]
     
 end
